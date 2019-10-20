@@ -1,9 +1,10 @@
 module.exports = reverse;
 function reverse(str) {
-  let result;
-  if (typeof str !== String) {
-    // eslint-disable-next-line no-undef
-    throw new CustomError('Not a string');
+  let result = "";
+
+  for (let i = str.length - 1; i >= 0; i--) {
+    result += str[i];
   }
+
   return result;
 }
