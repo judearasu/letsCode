@@ -4,23 +4,32 @@ module.exports = QuestionsMarks;
 function QuestionsMarks(str) {
   let numbers = [];
   let inputStrArr = str;
+  let numbersWithIndex = [];
+
   let result = false;
   for (let i = 0; i < inputStrArr.length; i++) {
     if (parseInt(inputStrArr[i], 10)) {
       numbers.push(inputStrArr[i]);
+      numbersWithIndex.push({
+        number: parseInt(inputStrArr[i], 10),
+        index: i,
+      });
     }
   }
-  for (let j = 0; j < numbers.length - 1; j++) {
-    if (parseInt(numbers[j], 10) + parseInt(numbers[j + 1], 10) === 10) {
+  for (let j = 0; j < numbersWithIndex.length - 1; j++) {
+    if (
+      parseInt(numbersWithIndex[j].number, 10) +
+        parseInt(numbersWithIndex[j + 1].number, 10) ===
+      10
+    ) {
       result = true;
-      let subStrTxt = inputStrArr.substring(
-        inputStrArr.lastIndexOf(numbers[j]) + 1,
-        inputStrArr.lastIndexOf(numbers[j + 1])
+      let subStr = inputStrArr.substring(
+        numbersWithIndex[j].index + 1,
+        numbersWithIndex[j + 1].index
       );
-      // eslint-disable-next-line no-useless-escape
-      subStrTxt =  subStrTxt.replace(/[^\?]/g,'');
-      if (subStrTxt !== "???") {
-         return result;
+      if (!subStr.includes('???')) {
+        result = false;
+        return false;
       }
     }
   }
