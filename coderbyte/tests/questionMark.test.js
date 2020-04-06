@@ -21,5 +21,10 @@ describe("questionMark", () => {
       const inputStr = "5??aaaaaaaaaaaaaaaaaaa?5?5";
       expect(questionMark(inputStr)).toEqual(false);
     });
+
+    test("Arg5 - should check and return false", () => {
+      const inputStr = "acc?7??sss?3rr1??????5";
+      expect(questionMark(inputStr)).toEqual(true);
+    });
   });
 });

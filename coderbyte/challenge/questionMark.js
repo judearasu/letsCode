@@ -27,6 +27,7 @@ function QuestionsMarks(str) {
         numbersWithIndex[j].index + 1,
         numbersWithIndex[j + 1].index
       );
+      subStr = subStr.replace(/[a-zA-Z]/g, '');
       if (!subStr.includes('???')) {
         result = false;
         return false;
