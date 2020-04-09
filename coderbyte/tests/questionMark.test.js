@@ -8,7 +8,7 @@ describe("questionMark", () => {
     });
 
     test("Arg2 - should check and return false", () => {
-      const inputStr = "aa6?9";
+      const inputStr = "aa6???9";
       expect(questionMark(inputStr)).toEqual(false);
     });
 
