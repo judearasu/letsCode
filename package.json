@@ -1,0 +1,27 @@
+{
+  "name": "letscode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "yarn lint && yarn jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/judearasu/letsCode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/judearasu/letsCode/issues"
+  },
+  "homepage": "https://github.com/judearasu/letsCode#readme",
+  "dependencies": {
+    "jest": "^24.9.0",
+    "lint": "^0.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1"
+  }
+}
