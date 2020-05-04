@@ -9,7 +9,7 @@ function longestWord(str) {
   let updatedString = str.trim();
   // let hashMap = [];
   // Remove non-alphanumeric characters
-  updatedString = updatedString.replace(/[^a-zA-Z]/gi, " ");
+  updatedString = updatedString.replace(/[^a-zA-Z0-9]/gi, " ");
   // Remove empty elements from the array
     updatedString = updatedString.split(" ").filter(strObj => strObj);
     updatedString = updatedString.sort((a, b) => b.length - a.length);

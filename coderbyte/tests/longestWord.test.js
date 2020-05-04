@@ -28,6 +28,15 @@ describe("longestWord", () => {
         expect(longestWord(inputStr)).toEqual("mathematics");
       });
   });
+
+  describe("should check the with the input arguments as numbers", () => { 
+    test("check for input1 as numbers", () => {
+      let inputStr = "123456789 98765432";
+      expect(longestWord(inputStr)).toEqual("123456789");
+    });
+
+  })
+
 });
 
 
