@@ -1,0 +1,75 @@
+body {
+	background: #FFF;
+}
+
+.input-radio {
+	display: inline-block;
+}
+
+.input-radio .input-radio__native-control {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+	cursor: inherit;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 40px;
+	height: 40px;
+}
+
+.input-radio .input-radio__background {
+	display: inline-block;
+	position: relative;
+	box-sizing: border-box;
+	width: 20px;
+	height: 20px;
+}
+
+.input-radio .input-radio__background:before {
+	border-radius: 50%;
+	content: "";
+	top: -10px;
+	left: -10px;
+	width: 40px;
+	height: 40px;
+	background-color: #018786;
+	opacity: 0;
+	pointer-events: none;
+	position: absolute;
+}
+
+.input-radio .input-radio__background .input-radio__outer-circle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	border-style: solid;
+	border-radius: 50%;
+	border-width: 2px;
+}
+
+.input-radio .input-radio__native-control:not(:checked)+.input-radio__background .input-radio__outer-circle {
+	border-color: rgba(0, 0, 0, .54);
+}
+
+.input-radio .input-radio__native-control:checked+.input-radio__background .input-radio__outer-circle {
+	border-color: #018786;
+}
+
+.input-radio .input-radio__native-control:checked+.input-radio__background .input-radio__inner-circle {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	box-sizing: border-box;
+	width: 50%;
+	height: 50%;
+	border-width: 5px;
+	border-style: solid;
+	border-radius: 50%;
+	border-color: #018786;
+}
