@@ -1,5 +1,5 @@
 body {
-	background: #FFF;
+	background:#FFF;
 }
 
 .input-radio {
@@ -24,7 +24,7 @@ body {
 	box-sizing: border-box;
 	width: 20px;
 	height: 20px;
-}
+} 
 
 .input-radio .input-radio__background .input-radio__outer-circle {
 	position: absolute;
