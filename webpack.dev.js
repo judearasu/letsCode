@@ -28,6 +28,12 @@ module.exports = merge(common, {
       template: "./html/index.html",
       filename: 'index.html',
     }),
+    new HtmlWebpackPlugin({
+      title: 'Button Demo',
+      chunks: ['button_group'],
+      template: "./html/button_group/button_group.html",
+      filename: 'button_group.html',
+    }),
   ],
   module: {
     rules: [

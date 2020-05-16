@@ -3,7 +3,8 @@ module.exports = {
   entry: {
     app: "./html/index.js",
     radio: "./html/radio/index.js",
-    checkbox: "./html/checkbox/index.js"
+    checkbox: "./html/checkbox/index.js",
+    button_group: "./html/button_group/index.js"
   },
   module: {
     rules: [
