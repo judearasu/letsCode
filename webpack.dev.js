@@ -34,6 +34,12 @@ module.exports = merge(common, {
       template: "./html/button_group/button_group.html",
       filename: 'button_group.html',
     }),
+    new HtmlWebpackPlugin({
+      title: 'Button Demo',
+      chunks: ['button_group_2'],
+      template: "./html/button_group_2/button_group_2.html",
+      filename: 'button_group_2.html',
+    })
   ],
   module: {
     rules: [
