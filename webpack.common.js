@@ -4,7 +4,8 @@ module.exports = {
     app: "./html/index.js",
     radio: "./html/radio/index.js",
     checkbox: "./html/checkbox/index.js",
-    button_group: "./html/button_group/index.js"
+    button_group: "./html/button_group/index.js",
+    button_group_2: "./html/button_group_2/index.js"
   },
   module: {
     rules: [

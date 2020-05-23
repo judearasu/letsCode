@@ -1,0 +1,41 @@
+body {
+	background: #FFF;
+}
+
+.button-group .input-group-checkbox{
+	display: inline-block;
+}
+
+
+.button-group .input-group-checkbox .input-checkbox__native-control {
+    position: absolute;
+	opacity: 0;
+	cursor: inherit;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 40px;
+	height: 40px;
+    user-select: none;
+}
+
+.button-group .input-group-checkbox label{
+    font-size: 1rem;
+    border: 2px solid #6200ee;
+    color: #6200ee;
+    background-color: transparent;
+    padding: 0.5rem 0.5rem;
+    border-radius: 4px;
+    box-sizing: border-box;
+    min-width: 64px;
+}
+
+.button-group .input-group-checkbox label:hover{
+    cursor: pointer;
+}
+
+.button-group .input-group-checkbox .input-checkbox__native-control:checked + label{
+    background-color: #6200ee;
+    color: #FFF;
+}
