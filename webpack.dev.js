@@ -39,6 +39,12 @@ module.exports = merge(common, {
       chunks: ['button_group_2'],
       template: "./html/button_group_2/button_group_2.html",
       filename: 'button_group_2.html',
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Switch',
+      chunks: ['switch'],
+      template: "./html/switch/switch.html",
+      filename: 'switch.html',
     })
   ],
   module: {
