@@ -1,0 +1,76 @@
+body {
+	background-color: #E4E5E6;
+}
+
+.input-switch{
+    display: inline-block;
+    position: relative;
+    outline: none;
+    user-select: none;
+}
+
+.input-switch + label{
+    margin-left: 10px;
+}
+
+.input-switch__native-control {
+    left: 0;
+    right: auto;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    pointer-events: auto;
+    width: 68px;
+    height: 48px;
+}
+
+.input-switch__track{
+    background-color: #000;
+    border-color: #000;
+    box-sizing: border-box;
+    width: 32px;
+    height: 14px;
+    border: 1px solid;
+    border-radius: 7px;
+    opacity: .38;
+    transition: opacity 90ms cubic-bezier(.4,0,.2,1),background-color 90ms cubic-bezier(.4,0,.2,1),border-color 90ms cubic-bezier(.4,0,.2,1);
+}
+
+.input-switch__thumb-underlay{
+    z-index: 1;
+    left: -18px;
+    right: auto;
+    top: -17px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(0);
+    transition: background-color 90ms cubic-bezier(.4,0,.2,1),border-color 90ms cubic-bezier(.4,0,.2,1),-webkit-transform 90ms cubic-bezier(.4,0,.2,1);
+}
+
+.input-switch__thumb{
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    border: 10px solid;
+    border-radius: 50%;
+    pointer-events: none;
+    border-color: #FFF;
+}
+
+.input-switch__native-control:checked+.input-switch__thumb-underlay{
+    transform: translateX(20px);
+}
+.input-switch__native-control:checked+.input-switch__thumb-underlay .input-switch__thumb {
+    border-color: #018786;
+}
+.input-switch__native-control:checked+ .input-switch__thumb-underlay + .input-switch__track{
+    background-color: #018786;
+    border-color: transparent;
+}
