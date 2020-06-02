@@ -6,7 +6,8 @@ module.exports = {
     checkbox: "./html/checkbox/index.js",
     button_group: "./html/button_group/index.js",
     button_group_2: "./html/button_group_2/index.js",
-    switch: "./html/switch/index.js"
+    switch: "./html/switch/index.js",
+    slider: "./html/slider/index.js"
   },
   module: {
     rules: [
