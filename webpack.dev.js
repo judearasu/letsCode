@@ -52,6 +52,18 @@ module.exports = merge(common, {
       template: "./html/slider/slider.html",
       filename: "slider.html",
     }),
+    new HtmlWebpackPlugin({
+      title: "Inline Block",
+      chunks: ["inline_block"],
+      template: "./html/inline_block/inline_block.html",
+      filename: "inline_block.html",
+    }),
+    new HtmlWebpackPlugin({
+      title: "Div Table",
+      chunks: ["div_table"],
+      template: "./html/div_table/div_table.html",
+      filename: "div_table.html",
+    }),
   ],
   module: {
     rules: [
