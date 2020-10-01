@@ -3,549 +3,222 @@
   <head>
     <meta charset="utf-8" />
   </head>
+
   <body>
-    <div class="table-container" role="table" aria-label="Destinations">
-      <div class="flex-table header" role="rowgroup">
-        <div class="flex-row first" role="columnheader">Company Name</div>
-        <div class="flex-row" role="columnheader">Job Title</div>
-        <div class="flex-row" role="columnheader">Department</div>
-        <div class="flex-row" role="columnheader">State</div>
-        <div class="flex-row" role="columnheader">Tax Year</div>
-        <div class="flex-row" role="columnheader">Allocation Type</div>
-        <div class="flex-row" role="columnheader">Direct Development</div>
-        <div class="flex-row" role="columnheader">Direct Supervision</div>
-        <div class="flex-row" role="columnheader">Direct Support</div>
-        <div class="flex-row" role="columnheader">Paid Off</div>
-        <div class="flex-row" role="columnheader">All Other Activities</div>
-        <div class="flex-row" role="columnheader">Total</div>
-        <div class="flex-row" role="columnheader">Linux</div>
-        <div class="flex-row" role="columnheader">Kernel</div>
-        <div class="flex-row" role="columnheader">Total</div>
+    <div class="container-fluid" style="margin-top: 10px">
+      <h1>Wage Allocation</h1>
+      <div class="table-header table-row" role="grid-header">
+        <div class="column xs"><input type="checkbox" /></div>
+        <div class="column md">Employee Name</div>
+        <div class="column md">JobTitle</div>
+        <div class="column md">Department</div>
+        <div class="column xs">State</div>
+        <div class="column sm">Tax Year</div>
+        <div class="column sm">Priority</div>
+        <div class="column-group" role="activities">
+          <div class="column sm-width">Direct Development</div>
+          <div class="column sm-width">Direct Support</div>
+          <div class="column sm-width">Direct Supervision</div>
+          <div class="column sm-width">Paid Time Off</div>
+          <div class="column xs-width">All Other Activities</div>
+          <div class="column xs-width">Total</div>
+        </div>
+        <div class="column-group" role="notes">
+          <div class="column lg-width">Notes</div>
+        </div>
+        <!-- <div class="column-group" role="businesscomponents">
+          <div class="column">BC1</div>
+          <div class="column">BC2</div>
+          <div class="column">BC3</div>
+          <div class="column">Total</div>
+        </div> -->
       </div>
-      <div class="flex-table row" role="rowgroup">
-        <div class="flex-row first" role="cell">
-          <span class="flag-icon flag-icon-gb"></span> United Kingdom
+      <div class="table-body">
+        <div class="table-row" role="grid-header">
+          <div class="column xs"><input type="checkbox" /></div>
+          <div class="column md">Google</div>
+          <div class="column md">
+            <input type="text" value="Web Architect" />
+          </div>
+          <div class="column md">Data Science</div>
+          <div class="column xs">CA</div>
+          <div class="column sm">2021</div>
+          <div class="column sm"><input type="number" value="7" /></div>
+          <div class="column-group" role="activities">
+            <div class="column sm-width">
+              <input type="number" value="10" />
+            </div>
+            <div class="column sm-width">
+              <input type="number" value="30" />
+            </div>
+            <div class="column sm-width">
+              <input type="number" value="20" />
+            </div>
+            <div class="column sm-width">
+              <input type="number" value="20" />
+            </div>
+            <div class="column xs-width">10%</div>
+            <div class="column xs-width">100%</div>
+          </div>
+          <div class="column-group" role="notes">
+            <div class="column lg-width">This is a note from CAD</div>
+          </div>
+          <!-- <div class="column-group" role="businesscomponents">
+            <div class="column">BC1</div>
+            <div class="column">BC2</div>
+            <div class="column">BC3</div>
+            <div class="column">Total</div>
+          </div> -->
         </div>
-        <div class="flex-row" role="cell">
-          Senior Manager
+        <div class="table-row" role="grid-header">
+          <div class="column xs"><input type="checkbox" /></div>
+          <div class="column md">Linkedin</div>
+          <div class="column md">
+            <input type="text" value="Web Architect" />
+          </div>
+          <div class="column md">Data Science</div>
+          <div class="column xs">CA</div>
+          <div class="column sm">2024</div>
+          <div class="column sm"><input type="number" value="7" /></div>
+          <div class="column-group" role="activities">
+            <div class="column sm-width">
+              <input type="number" value="10" />
+            </div>
+            <div class="column sm-width">
+              <input type="number" value="30" />
+            </div>
+            <div class="column sm-width">
+              <input type="number" value="20" />
+            </div>
+            <div class="column sm-width">
+              <input type="number" value="20" />
+            </div>
+            <div class="column xs-width">10%</div>
+            <div class="column xs-width">100%</div>
+          </div>
+          <div class="column-group" role="notes">
+            <div class="column lg-width">This is a note from CAD</div>
+          </div>
+          <!-- <div class="column-group" role="businesscomponents">
+            <div class="column">BC1</div>
+            <div class="column">BC2</div>
+            <div class="column">BC3</div>
+            <div class="column">Total</div>
+          </div> -->
         </div>
-        <div class="flex-row" role="cell">Manager</div>
-        <div class="flex-row" role="cell">NY</div>
-        <div class="flex-row" role="cell">2020</div>
-        <div class="flex-row" role="cell">Expense</div>
-        <div class="flex-row" role="cell">10</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
       </div>
-      <div class="flex-table row" role="rowgroup">
-        <div class="flex-row first" role="cell">
-          <span class="flag-icon flag-icon-gb"></span> United Kingdom
+
+      <h1>Expense Allocation</h1>
+      <div class="table-header table-row" role="grid-header">
+        <div class="column xs"><input type="checkbox" /></div>
+        <div class="column xs">R&D Related</div>
+        <div class="column xs">Tax Year</div>
+        <div class="column sm">Transaction Date</div>
+        <div class="column sm">GL Account</div>
+        <div class="column sm">Allocation Type</div>
+        <div class="column xs">Invoice</div>
+        <div class="column xs">Vendor</div>
+        <div class="column sm">Description</div>
+        <div class="column sm">Priority</div>
+        <div class="column-group" role="activities">
+          <div class="column sm-width">Direct Development</div>
+          <div class="column sm-width">Direct Support</div>
+          <div class="column sm-width">Direct Supervision</div>
+          <div class="column sm-width">Paid Time Off</div>
+          <div class="column xs-width">All Other Activities</div>
+          <div class="column xs-width">Total</div>
         </div>
-        <div class="flex-row" role="cell">
-          Senior Manager
+        <div class="column-group" role="notes">
+          <div class="column lg-width">Notes</div>
         </div>
-        <div class="flex-row" role="cell">Manager</div>
-        <div class="flex-row" role="cell">NY</div>
-        <div class="flex-row" role="cell">2020</div>
-        <div class="flex-row" role="cell">Expense</div>
-        <div class="flex-row" role="cell">10</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
+        <!-- <div class="column-group" role="businesscomponents">
+          <div class="column">BC1</div>
+          <div class="column">BC2</div>
+          <div class="column">BC3</div>
+          <div class="column">Total</div>
+        </div> -->
       </div>
-      <div class="flex-table row" role="rowgroup">
-        <div class="flex-row first" role="cell">
-          <span class="flag-icon flag-icon-gb"></span> United Kingdom
+      <div class="table-body">
+        <div class="table-row" role="grid-header">
+          <div class="column xs"><input type="checkbox" /></div>
+          <div class="column xs"><input type="checkbox" /></div>
+          <div class="column xs">2021</div>
+          <div class="column sm">
+            05-05-2020
+          </div>
+          <div class="column sm">Credit Card Expense</div>
+          <div class="column sm">CA</div>
+         
+          <div class="column xs">L_3423</div>
+          <div class="column xs">VN1</div>
+          <div class="column sm">desc1</div>
+          <div class="column sm"><input type="number" value="7" /></div>
+          <div class="column-group" role="activities">
+            <div class="column sm-width">
+              <input type="number" value="10" />
+            </div>
+            <div class="column sm-width">
+              <input type="number" value="30" />
+            </div>
+            <div class="column sm-width">
+              <input type="number" value="20" />
+            </div>
+            <div class="column sm-width">
+              <input type="number" value="20" />
+            </div>
+            <div class="column xs-width">10%</div>
+            <div class="column xs-width">100%</div>
+          </div>
+          <div class="column-group" role="notes">
+            <div class="column lg-width">This is a note from CAD</div>
+          </div>
+          <!-- <div class="column-group" role="businesscomponents">
+            <div class="column">BC1</div>
+            <div class="column">BC2</div>
+            <div class="column">BC3</div>
+            <div class="column">Total</div>
+          </div> -->
         </div>
-        <div class="flex-row" role="cell">
-          Senior Manager
+        <div class="table-row" role="grid-header">
+          <div class="column xs"><input type="checkbox" /></div>
+          <div class="column xs"><input type="checkbox" /></div>
+          <div class="column xs">2024</div>
+          <div class="column sm">
+            05-15-2020
+          </div>
+          <div class="column sm">Cash Expense</div>
+          <div class="column sm">CA</div>
+        
+          <div class="column xs">L_3423</div>
+          <div class="column xs">VN2</div>
+          <div class="column sm">desc2</div>
+          <div class="column sm"><input type="number" value="7" /></div>
+          <div class="column-group" role="activities">
+            <div class="column sm-width">
+              <input type="number" value="10" />
+            </div>
+            <div class="column sm-width">
+              <input type="number" value="30" />
+            </div>
+            <div class="column sm-width">
+              <input type="number" value="20" />
+            </div>
+            <div class="column sm-width">
+              <input type="number" value="20" />
+            </div>
+            <div class="column xs-width">10%</div>
+            <div class="column xs-width">100%</div>
+          </div>
+          <div class="column-group" role="notes">
+            <div class="column lg-width">This is a note from CAD</div>
+          </div>
+          <!-- <div class="column-group" role="businesscomponents">
+            <div class="column">BC1</div>
+            <div class="column">BC2</div>
+            <div class="column">BC3</div>
+            <div class="column">Total</div>
+          </div> -->
         </div>
-        <div class="flex-row" role="cell">Manager</div>
-        <div class="flex-row" role="cell">NY</div>
-        <div class="flex-row" role="cell">2020</div>
-        <div class="flex-row" role="cell">Expense</div>
-        <div class="flex-row" role="cell">10</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-      </div>
-      <div class="flex-table row" role="rowgroup">
-        <div class="flex-row first" role="cell">
-          <span class="flag-icon flag-icon-gb"></span> United Kingdom
-        </div>
-        <div class="flex-row" role="cell">
-          Senior Manager
-        </div>
-        <div class="flex-row" role="cell">Manager</div>
-        <div class="flex-row" role="cell">NY</div>
-        <div class="flex-row" role="cell">2020</div>
-        <div class="flex-row" role="cell">Expense</div>
-        <div class="flex-row" role="cell">10</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-      </div>
-      <div class="flex-table row" role="rowgroup">
-        <div class="flex-row first" role="cell">
-          <span class="flag-icon flag-icon-gb"></span> United Kingdom
-        </div>
-        <div class="flex-row" role="cell">
-          Senior Manager
-        </div>
-        <div class="flex-row" role="cell">Manager</div>
-        <div class="flex-row" role="cell">NY</div>
-        <div class="flex-row" role="cell">2020</div>
-        <div class="flex-row" role="cell">Expense</div>
-        <div class="flex-row" role="cell">10</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-      </div>
-      <div class="flex-table row" role="rowgroup">
-        <div class="flex-row first" role="cell">
-          <span class="flag-icon flag-icon-gb"></span> United Kingdom
-        </div>
-        <div class="flex-row" role="cell">
-          Senior Manager
-        </div>
-        <div class="flex-row" role="cell">Manager</div>
-        <div class="flex-row" role="cell">NY</div>
-        <div class="flex-row" role="cell">2020</div>
-        <div class="flex-row" role="cell">Expense</div>
-        <div class="flex-row" role="cell">10</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-      </div>
-      <div class="flex-table row" role="rowgroup">
-        <div class="flex-row first" role="cell">
-          <span class="flag-icon flag-icon-gb"></span> United Kingdom
-        </div>
-        <div class="flex-row" role="cell">
-          Senior Manager
-        </div>
-        <div class="flex-row" role="cell">Manager</div>
-        <div class="flex-row" role="cell">NY</div>
-        <div class="flex-row" role="cell">2020</div>
-        <div class="flex-row" role="cell">Expense</div>
-        <div class="flex-row" role="cell">10</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-      </div>
-      <div class="flex-table row" role="rowgroup">
-        <div class="flex-row first" role="cell">
-          <span class="flag-icon flag-icon-gb"></span> United Kingdom
-        </div>
-        <div class="flex-row" role="cell">
-          Senior Manager
-        </div>
-        <div class="flex-row" role="cell">Manager</div>
-        <div class="flex-row" role="cell">NY</div>
-        <div class="flex-row" role="cell">2020</div>
-        <div class="flex-row" role="cell">Expense</div>
-        <div class="flex-row" role="cell">10</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-      </div>
-      <div class="flex-table row" role="rowgroup">
-        <div class="flex-row first" role="cell">
-          <span class="flag-icon flag-icon-gb"></span> United Kingdom
-        </div>
-        <div class="flex-row" role="cell">
-          Senior Manager
-        </div>
-        <div class="flex-row" role="cell">Manager</div>
-        <div class="flex-row" role="cell">NY</div>
-        <div class="flex-row" role="cell">2020</div>
-        <div class="flex-row" role="cell">Expense</div>
-        <div class="flex-row" role="cell">10</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-      </div>
-      <div class="flex-table row" role="rowgroup">
-        <div class="flex-row first" role="cell">
-          <span class="flag-icon flag-icon-gb"></span> United Kingdom
-        </div>
-        <div class="flex-row" role="cell">
-          Senior Manager
-        </div>
-        <div class="flex-row" role="cell">Manager</div>
-        <div class="flex-row" role="cell">NY</div>
-        <div class="flex-row" role="cell">2020</div>
-        <div class="flex-row" role="cell">Expense</div>
-        <div class="flex-row" role="cell">10</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-      </div>
-      <div class="flex-table row" role="rowgroup">
-        <div class="flex-row first" role="cell">
-          <span class="flag-icon flag-icon-gb"></span> United Kingdom
-        </div>
-        <div class="flex-row" role="cell">
-          Senior Manager
-        </div>
-        <div class="flex-row" role="cell">Manager</div>
-        <div class="flex-row" role="cell">NY</div>
-        <div class="flex-row" role="cell">2020</div>
-        <div class="flex-row" role="cell">Expense</div>
-        <div class="flex-row" role="cell">10</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-      </div>
-      <div class="flex-table row" role="rowgroup">
-        <div class="flex-row first" role="cell">
-          <span class="flag-icon flag-icon-gb"></span> United Kingdom
-        </div>
-        <div class="flex-row" role="cell">
-          Senior Manager
-        </div>
-        <div class="flex-row" role="cell">Manager</div>
-        <div class="flex-row" role="cell">NY</div>
-        <div class="flex-row" role="cell">2020</div>
-        <div class="flex-row" role="cell">Expense</div>
-        <div class="flex-row" role="cell">10</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-      </div>
-      <div class="flex-table row" role="rowgroup">
-        <div class="flex-row first" role="cell">
-          <span class="flag-icon flag-icon-gb"></span> United Kingdom
-        </div>
-        <div class="flex-row" role="cell">
-          Senior Manager
-        </div>
-        <div class="flex-row" role="cell">Manager</div>
-        <div class="flex-row" role="cell">NY</div>
-        <div class="flex-row" role="cell">2020</div>
-        <div class="flex-row" role="cell">Expense</div>
-        <div class="flex-row" role="cell">10</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-      </div>
-      <div class="flex-table row" role="rowgroup">
-        <div class="flex-row first" role="cell">
-          <span class="flag-icon flag-icon-gb"></span> United Kingdom
-        </div>
-        <div class="flex-row" role="cell">
-          Senior Manager
-        </div>
-        <div class="flex-row" role="cell">Manager</div>
-        <div class="flex-row" role="cell">NY</div>
-        <div class="flex-row" role="cell">2020</div>
-        <div class="flex-row" role="cell">Expense</div>
-        <div class="flex-row" role="cell">10</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-      </div>
-      <div class="flex-table row" role="rowgroup">
-        <div class="flex-row first" role="cell">
-          <span class="flag-icon flag-icon-gb"></span> United Kingdom
-        </div>
-        <div class="flex-row" role="cell">
-          Senior Manager
-        </div>
-        <div class="flex-row" role="cell">Manager</div>
-        <div class="flex-row" role="cell">NY</div>
-        <div class="flex-row" role="cell">2020</div>
-        <div class="flex-row" role="cell">Expense</div>
-        <div class="flex-row" role="cell">10</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-      </div>
-      <div class="flex-table row" role="rowgroup">
-        <div class="flex-row first" role="cell">
-          <span class="flag-icon flag-icon-gb"></span> United Kingdom
-        </div>
-        <div class="flex-row" role="cell">
-          Senior Manager
-        </div>
-        <div class="flex-row" role="cell">Manager</div>
-        <div class="flex-row" role="cell">NY</div>
-        <div class="flex-row" role="cell">2020</div>
-        <div class="flex-row" role="cell">Expense</div>
-        <div class="flex-row" role="cell">10</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-      </div>
-      <div class="flex-table row" role="rowgroup">
-        <div class="flex-row first" role="cell">
-          <span class="flag-icon flag-icon-gb"></span> United Kingdom
-        </div>
-        <div class="flex-row" role="cell">
-          Senior Manager
-        </div>
-        <div class="flex-row" role="cell">Manager</div>
-        <div class="flex-row" role="cell">NY</div>
-        <div class="flex-row" role="cell">2020</div>
-        <div class="flex-row" role="cell">Expense</div>
-        <div class="flex-row" role="cell">10</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-      </div>
-      <div class="flex-table row" role="rowgroup">
-        <div class="flex-row first" role="cell">
-          <span class="flag-icon flag-icon-gb"></span> United Kingdom
-        </div>
-        <div class="flex-row" role="cell">
-          Senior Manager
-        </div>
-        <div class="flex-row" role="cell">Manager</div>
-        <div class="flex-row" role="cell">NY</div>
-        <div class="flex-row" role="cell">2020</div>
-        <div class="flex-row" role="cell">Expense</div>
-        <div class="flex-row" role="cell">10</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-      </div>
-      <div class="flex-table row" role="rowgroup">
-        <div class="flex-row first" role="cell">
-          <span class="flag-icon flag-icon-gb"></span> United Kingdom
-        </div>
-        <div class="flex-row" role="cell">
-          Senior Manager
-        </div>
-        <div class="flex-row" role="cell">Manager</div>
-        <div class="flex-row" role="cell">NY</div>
-        <div class="flex-row" role="cell">2020</div>
-        <div class="flex-row" role="cell">Expense</div>
-        <div class="flex-row" role="cell">10</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-      </div>
-      <div class="flex-table row" role="rowgroup">
-        <div class="flex-row first" role="cell">
-          <span class="flag-icon flag-icon-gb"></span> United Kingdom
-        </div>
-        <div class="flex-row" role="cell">
-          Senior Manager
-        </div>
-        <div class="flex-row" role="cell">Manager</div>
-        <div class="flex-row" role="cell">NY</div>
-        <div class="flex-row" role="cell">2020</div>
-        <div class="flex-row" role="cell">Expense</div>
-        <div class="flex-row" role="cell">10</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-      </div>
-      <div class="flex-table row" role="rowgroup">
-        <div class="flex-row first" role="cell">
-          <span class="flag-icon flag-icon-gb"></span> United Kingdom
-        </div>
-        <div class="flex-row" role="cell">
-          Senior Manager
-        </div>
-        <div class="flex-row" role="cell">Manager</div>
-        <div class="flex-row" role="cell">NY</div>
-        <div class="flex-row" role="cell">2020</div>
-        <div class="flex-row" role="cell">Expense</div>
-        <div class="flex-row" role="cell">10</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-      </div>
-      <div class="flex-table row" role="rowgroup">
-        <div class="flex-row first" role="cell">
-          <span class="flag-icon flag-icon-gb"></span> United Kingdom
-        </div>
-        <div class="flex-row" role="cell">
-          Senior Manager
-        </div>
-        <div class="flex-row" role="cell">Manager</div>
-        <div class="flex-row" role="cell">NY</div>
-        <div class="flex-row" role="cell">2020</div>
-        <div class="flex-row" role="cell">Expense</div>
-        <div class="flex-row" role="cell">10</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-      </div>
-      <div class="flex-table row" role="rowgroup">
-        <div class="flex-row first" role="cell">
-          <span class="flag-icon flag-icon-gb"></span> United Kingdom
-        </div>
-        <div class="flex-row" role="cell">
-          Senior Manager
-        </div>
-        <div class="flex-row" role="cell">Manager</div>
-        <div class="flex-row" role="cell">NY</div>
-        <div class="flex-row" role="cell">2020</div>
-        <div class="flex-row" role="cell">Expense</div>
-        <div class="flex-row" role="cell">10</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-      </div>
-      <div class="flex-table row" role="rowgroup">
-        <div class="flex-row first" role="cell">
-          <span class="flag-icon flag-icon-gb"></span> United Kingdom
-        </div>
-        <div class="flex-row" role="cell">
-          Senior Manager
-        </div>
-        <div class="flex-row" role="cell">Manager</div>
-        <div class="flex-row" role="cell">NY</div>
-        <div class="flex-row" role="cell">2020</div>
-        <div class="flex-row" role="cell">Expense</div>
-        <div class="flex-row" role="cell">10</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-      </div>
-      <div class="flex-table row" role="rowgroup">
-        <div class="flex-row first" role="cell">
-          <span class="flag-icon flag-icon-gb"></span> United Kingdom
-        </div>
-        <div class="flex-row" role="cell">
-          Senior Manager
-        </div>
-        <div class="flex-row" role="cell">Manager</div>
-        <div class="flex-row" role="cell">NY</div>
-        <div class="flex-row" role="cell">2020</div>
-        <div class="flex-row" role="cell">Expense</div>
-        <div class="flex-row" role="cell">10</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
-        <div class="flex-row" role="cell">20</div>
       </div>
     </div>
   </body>
